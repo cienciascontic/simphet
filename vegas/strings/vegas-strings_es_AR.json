@@ -1,0 +1,23 @@
+{
+  "pattern.0challenge.1max": "Desafío {0} de {1}",
+  "pattern.0hours.1minutes.2seconds": "{0}:{1}:{2}",
+  "pattern.0minutes.1seconds": "{0}:{1}",
+  "keepTrying": "Seguí intentando",
+  "good": "¡Bien!",
+  "great": "Muy bien!",
+  "excellent": "Excelente!",
+  "yourNewBest": "(¡Tu nuevo mejor!)",
+  "pattern.0yourBest": "(Tu mejor: {0})",
+  "continue": "Continuar",
+  "label.level": "Nivel: {0}",
+  "label.score": "Puntaje: {0}",
+  "check": "Comprobar",
+  "next": "Siguiente",
+  "button.newGame": "Nuevo juego",
+  "showAnswer": "Mostrar respuesta",
+  "label.time": "Tiempo: {0}",
+  "label.score.max": "Puntaje: {0} de {1}",
+  "tryAgain": "Intentar otra vez",
+  "selectLevel": "Elegir Nivel",
+  "startOver": "Comenzar de nuevo"
+}

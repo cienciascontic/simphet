@@ -1,0 +1,18 @@
+{
+  "label.level": "سطح : {0}",
+  "title.gameSettings": " تنظيمات بازی",
+  "label.score": " حساب : {0}",
+  "button.start": "شروع كردن",
+  "radioButton.on": "روشن",
+  "radioButton.off": "خاموش ",
+  "title.gameOver": "بازى دوباره",
+  "button.newGame": "بازی جدید",
+  "label.newBest": "بهترين تازه به دست آمده",
+  "label.best": "بهترين : {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "سطح :",
+  "label.time": "زمان: {0}",
+  "label.score.max": "حساب : {0} out of {1}",
+  "label.score.max.perfect": "حساب : {0} out of {1}",
+  "message.confirmNewGame": "شما این بازی را تمام نکرده اید! .\nشما مطمئنید که میخواهید بازی جدید را شروع کنید؟"
+}

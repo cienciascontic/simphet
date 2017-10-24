@@ -1,0 +1,18 @@
+{
+  "label.level": "Mức: {0}",
+  "title.gameSettings": "Thiết đặt của game",
+  "label.score": "Điểm: {0}",
+  "button.start": "Bắt đầu!",
+  "radioButton.on": "Bật",
+  "radioButton.off": "Tắt",
+  "title.gameOver": "Game over",
+  "button.newGame": "Game mới",
+  "label.newBest": "Kỷ lục mới!",
+  "label.best": "Cao nhất: {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "Mức:",
+  "label.time": "Thời gian: {0}",
+  "label.score.max": "Điểm: {0} trên {1}",
+  "label.score.max.perfect": "Điểm: {0} trên {1} (Xuất sắc!)",
+  "message.confirmNewGame": "Bạn chưa hoàn thành game này.\nBắt đầu một game mới nhé?"
+}

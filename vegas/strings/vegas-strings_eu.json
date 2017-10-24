@@ -1,0 +1,18 @@
+{
+  "label.level": "Maila: {0}",
+  "title.gameSettings": "Jokoaren xehetasunak",
+  "label.score": "Puntuazioa: {0}",
+  "button.start": "Hasi",
+  "radioButton.on": "on",
+  "radioButton.off": "off",
+  "title.gameOver": "Bukatu da jokoa",
+  "button.newGame": "Joko berria",
+  "label.newBest": "Zure marka berria!",
+  "label.best": "Zure marka: {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "Maila:",
+  "label.time": "Denbora: {0} ",
+  "label.score.max": "Puntuazioa: {1}-(e)tik {0} ",
+  "label.score.max.perfect": "Puntuazioa: {1}-(e)tik {0} (Bikain!)",
+  "message.confirmNewGame": "Ez duzu jokoa bukatu.\nSeguru joko berri bat hasi nahi duzula?"
+}

@@ -1,0 +1,16 @@
+{
+  "label.level": "Poziom: {0}",
+  "title.gameSettings": "Ustawienia gry",
+  "label.score": "Wynik: {0}",
+  "radioButton.on": "wł",
+  "radioButton.off": "wył",
+  "title.gameOver": "Koniec gry",
+  "button.newGame": "Nowa gra",
+  "label.newBest": "Twój nowy rekord!",
+  "label.best": "Najlepszy: {0}",
+  "label.levelControl": "Poziom:",
+  "label.time": "Czas: {0}",
+  "label.score.max": "Wynik: {0} z {1}",
+  "label.score.max.perfect": "Wynik: {0} z {1} (Świetnie!)",
+  "message.confirmNewGame": "Gra nie została zakończona.\nCzy chcesz rozpocząć nową grę?"
+}

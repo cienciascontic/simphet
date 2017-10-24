@@ -1,0 +1,18 @@
+{
+  "label.level": "Taso: {0}",
+  "title.gameSettings": "Peliasetukset",
+  "label.score": "Pisteet: {0}",
+  "button.start": "Aloita",
+  "radioButton.on": "päälle",
+  "radioButton.off": "pois",
+  "title.gameOver": "Peli päättyi",
+  "button.newGame": "Uusi peli",
+  "label.newBest": "Uusi ennätys!",
+  "label.best": "Paras tulos: {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "Taso:",
+  "label.time": "Aika: {0}",
+  "label.score.max": "Pisteet: {0} / {1}",
+  "label.score.max.perfect": "Pisteet: {0} / {1} (Huipputulos!)",
+  "message.confirmNewGame": "Peli on kesken.\nHaluatko varmasti aloittaa uuden pelin?"
+}

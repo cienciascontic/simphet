@@ -1,0 +1,18 @@
+{
+  "label.level": "Težavnost: {0}",
+  "title.gameSettings": "Nastavitve igre",
+  "label.score": "Rezultat: {0}",
+  "button.start": "Start!",
+  "radioButton.on": "vključeno",
+  "radioButton.off": "izključeno",
+  "title.gameOver": "Konec igre",
+  "button.newGame": "Nova igra",
+  "label.newBest": "Nov najboljši rezultat!",
+  "label.best": "Najboljši rezultati: {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "Težavnost:",
+  "label.time": "Čas: {0}",
+  "label.score.max": "Rezultat: {0} od {1}",
+  "label.score.max.perfect": "Rezultat: {0} od {1} (ODLIČNO!)",
+  "message.confirmNewGame": "Igre še ni konec.\nAli želite začeti novo igro?"
+}

@@ -1,0 +1,18 @@
+{
+  "label.level": "難度: {0}",
+  "title.gameSettings": "遊戲設定",
+  "label.score": "得分: {0}",
+  "button.start": "開始",
+  "radioButton.on": "開啟",
+  "radioButton.off": "關閉",
+  "title.gameOver": "遊戲結束",
+  "button.newGame": "新遊戲",
+  "label.newBest": "新紀錄!",
+  "label.best": "最好的: {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "難度:",
+  "label.time": "時間: {0}",
+  "label.score.max": "得分: 共 {1} 分, 得到 {0} 分",
+  "label.score.max.perfect": "得分: 共 {1} 分, 得到 {0} 分 (棒透了!)",
+  "message.confirmNewGame": "這遊戲還沒結束.\n您確定要開啟另一個新遊戲?"
+}

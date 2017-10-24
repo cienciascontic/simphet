@@ -1,0 +1,17 @@
+{
+  "label.level": "Dereje: {0}",
+  "title.gameSettings": "Oýunyň sazlamalary",
+  "label.score": "Bahaňyz: {0}",
+  "button.start": "Start",
+  "radioButton.on": "açyk",
+  "radioButton.off": "ýapyk",
+  "title.gameOver": "Oýun gutardy",
+  "button.newGame": "Täze oýun:",
+  "label.newBest": "Siziň üçin indi täze iň gowy netije!",
+  "label.best": "Siziň üçin iň gowy netije:{0}",
+  "label.levelControl": "Dereje:",
+  "label.time": "Wagt:{0}",
+  "label.score.max": "Bahaňyz: {0} out of {1}",
+  "label.score.max.perfect": "Bahaňyz: {0} out of {1}",
+  "message.confirmNewGame": "Bu oýuny entek gutarmadyň.\nÇyndan hem täze oýuny başlamak isleýäňmi?"
+}

@@ -1,0 +1,18 @@
+{
+  "label.level": "Līmenis: {0}",
+  "title.gameSettings": "Spēles iestatījumi",
+  "label.score": "Rezultāts: {0}",
+  "button.start": "Sākt",
+  "radioButton.on": "ieslēgts",
+  "radioButton.off": "izslēgts",
+  "title.gameOver": "Spēle beigusies",
+  "button.newGame": "Jauna spēle",
+  "label.newBest": "Jauns labākais rezultāts!",
+  "label.best": "Labākais rezultāts: {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "Līmenis:",
+  "label.time": "Laiks: {0}",
+  "label.score.max": "Rezultāts: {0} no {1}",
+  "label.score.max.perfect": "Rezultāts: {0} no {1} (Izcili!)",
+  "message.confirmNewGame": "Jūs neesat pabeidzis šo spēli.\nVai tiešām vēlaties sākt jaunu spēli?"
+}

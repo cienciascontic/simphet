@@ -1,0 +1,21 @@
+{
+  "label.level": "Niveau : {0}",
+  "title.gameSettings": "Paramètres du jeu",
+  "label.score": "Score : {0}",
+  "button.start": "Départ",
+  "check": "Vérifier",
+  "radioButton.on": "Activé",
+  "radioButton.off": "Inactif",
+  "title.gameOver": "Terminé",
+  "button.newGame": "Nouvelle partie",
+  "label.newBest": "Votre nouveau score !",
+  "label.best": "Meilleur score : {0}",
+  "showAnswer": "Montrer la réponse",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "Niveau :",
+  "label.time": "Temps : {0}",
+  "label.score.max": "Score : {0} sur {1}",
+  "tryAgain": "Essaye encore",
+  "label.score.max.perfect": "Score : {0} sur {1} (Parfait)",
+  "message.confirmNewGame": "Vous n'avez pas terminée cette partie.\nEtes-vous sûr de vouloir en commencer une nouvelle ?"
+}

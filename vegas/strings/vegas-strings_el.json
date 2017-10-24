@@ -1,0 +1,18 @@
+{
+  "label.level": "Επίπεδο: {0}",
+  "title.gameSettings": "Ρυθμίσεις παιχνιδιού",
+  "label.score": "Βαθμολογία: {0}",
+  "button.start": "Έναρξη!",
+  "radioButton.on": "κλειστό",
+  "radioButton.off": "ανοιχτό",
+  "title.gameOver": "Τέλος παιχνιδιού",
+  "button.newGame": "Νέο παιχνίδι",
+  "label.newBest": "ΝΕΟ ΚΑΛΥΤΕΡΟ:",
+  "label.best": "Καλύτερο: {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "Επίπεδο:",
+  "label.time": "Χρόνος: {0}",
+  "label.score.max": "Βαθμολογία: {0} από {1}",
+  "label.score.max.perfect": "Βαθμολογία: {0} από {1} (ΕΞΑΙΡΕΤΙΚΗ!)",
+  "message.confirmNewGame": "Δεν έχετε τελειώσει αυτό το παιχνίδι.\nΕίστε σίγουρος ότι θέλετε να ξεκινήσετε ένα νέο παιχνίδι;"
+}

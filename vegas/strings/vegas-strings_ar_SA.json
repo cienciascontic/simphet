@@ -1,0 +1,18 @@
+{
+  "label.level": "المستوي:\n{0}",
+  "title.gameSettings": "إعدادات اللعبة",
+  "label.score": "النتيجة\n: {0}",
+  "button.start": "ابدآ",
+  "radioButton.on": "مفتوح",
+  "radioButton.off": "مغلق",
+  "title.gameOver": "اللعبة انتهت",
+  "button.newGame": "لعبة جديدة",
+  "label.newBest": "الأفضل",
+  "label.best": "الأفضل: \n{0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "المستوى:",
+  "label.time": "الزمن\n: {0}",
+  "label.score.max": "النتيجة\n: {0} out of {1}",
+  "label.score.max.perfect": "النتيجة\n: {0} out of {1}\nكامل",
+  "message.confirmNewGame": "لم تنه اللعبة بعد\nهل أنت متأكد من رغبتك في البدء بلعبة جديدة؟"
+}

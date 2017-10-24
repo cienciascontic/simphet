@@ -1,0 +1,18 @@
+{
+  "label.levelControl": "Niveau:",
+  "label.score.max.perfect": "Score: {0} ud af {1} (Perfekt!)",
+  "message.confirmNewGame": "Du har ikke færdiggjort dette spil.\nEr du sikker på, at du vil starte et nyt spil?",
+  "button.newGame": "Nyt spil",
+  "label.newBest": "Ny rekord!",
+  "title.gameSettings": "Indstillinger",
+  "radioButton.on": "On",
+  "label.score": "Score: {0}",
+  "label.best": "Bedste: {0}",
+  "radioButton.off": "Off",
+  "label.level": "Niveau: {0}",
+  "format.time.best": "{0} ({1})",
+  "button.start": "Start!",
+  "label.time": "Tid: {0}",
+  "title.gameOver": "Spillet er slut",
+  "label.score.max": "Score: {0} ud af {1}"
+}

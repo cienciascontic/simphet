@@ -1,0 +1,10 @@
+7/7/14 #24 ScoreboardBar
+6/25/14 #23 rename all sounds so that names describe what they sound like, describe their purpose in code
+6/25/14 #16 use 'cheer' for perfect-score sound
+10/30/2013 Removed some duplicated strings in favor of the names/keys ported over from Java.
+10/23/2013 Migrated game strings from Java phetcommon
+10/22/2013 Migrated LevelCompletedNode & LevelStartButton from BAA
+10/11/2013 Added strings
+10/11/2013 Added GameTimer, GameOverPanel, GameSettingPanel
+10/9/2013 Added audio player
+10/4/2013 Created repo

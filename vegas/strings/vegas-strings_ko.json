@@ -1,0 +1,22 @@
+{
+  "label.level": "수준: {0}",
+  "title.gameSettings": "게임 세팅",
+  "label.score": "점수: {0}",
+  "button.start": "시작!",
+  "check": "체크",
+  "radioButton.on": "켜기",
+  "radioButton.off": "끄기",
+  "title.gameOver": "게임 끝",
+  "next": "다음",
+  "button.newGame": "새로운 게임",
+  "label.newBest": "새로운 최고 점수",
+  "label.best": "최고점수: {0}",
+  "showAnswer": "정답 보기",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "수준:",
+  "label.time": "시간: {0}",
+  "label.score.max": "점수: {1} 점 만점에 {0}점",
+  "tryAgain": "다시 해보세요",
+  "label.score.max.perfect": "점수: {1}점 만점에 {0}점 (만점)",
+  "message.confirmNewGame": "아직 게임이 끝나지 아니했습니다.\n새로운 게임을 시작하시겠습니까?"
+}

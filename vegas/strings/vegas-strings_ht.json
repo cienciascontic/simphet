@@ -1,0 +1,18 @@
+{
+  "label.level": "Nivo: {0}",
+  "title.gameSettings": "Kontwòl jwèt la",
+  "label.score": "Skore: {0}",
+  "button.start": "Kòmanse",
+  "radioButton.on": "limen",
+  "radioButton.off": "etenn",
+  "title.gameOver": "Jwèt la fini",
+  "button.newGame": "Nouvo Jwèt",
+  "label.newBest": "Yon nouvo ki pi bon!",
+  "label.best": "Sa ki bon: {0}",
+  "format.time.best": "{0}({1})",
+  "label.levelControl": "Nivo:",
+  "label.time": "Tan: {0}",
+  "label.score.max": "Skore: {0} sou {1}",
+  "label.score.max.perfect": "Skore: {0} sou {1} (Sa a bon nèt!)",
+  "message.confirmNewGame": "Ou poko fini ak pati sa a. Èske ou si ke w vle kòmanse yon lòt pati?"
+}

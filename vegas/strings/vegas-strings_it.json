@@ -1,0 +1,17 @@
+{
+  "label.level": "Livello: {0}",
+  "title.gameSettings": "Impostazioni del gioco",
+  "label.score": "Punteggio: {0} ",
+  "button.start": "Via",
+  "radioButton.on": "I",
+  "radioButton.off": "O",
+  "title.gameOver": "Gioco terminato",
+  "button.newGame": "Nuovo gioco",
+  "label.newBest": "Sei il migliore!",
+  "label.best": "Il tuo miglior punteggio: {0}",
+  "label.levelControl": "Livello:",
+  "label.time": "tempo: {0}",
+  "label.score.max": "Punteggio: {0} su {1}",
+  "label.score.max.perfect": "Punteggio: {0} su {1} (esatto!)",
+  "message.confirmNewGame": "Non hai finito il gioco.\nSei sicuro di voler ricominciare?"
+}

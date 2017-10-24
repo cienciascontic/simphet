@@ -1,0 +1,18 @@
+{
+  "label.level": "Kolo: {0}",
+  "title.gameSettings": "Nastavení hry",
+  "label.score": "Skóre: {0}",
+  "button.start": "Start!",
+  "radioButton.on": "zapnuto",
+  "radioButton.off": "vypnuto",
+  "title.gameOver": "Konec hry",
+  "button.newGame": "Nová hra",
+  "label.newBest": "Nový rekord!",
+  "label.best": "Nejlepší: {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "Kolo:",
+  "label.time": "Čas: {0}",
+  "label.score.max": "Skóre: {0} z {1}",
+  "label.score.max.perfect": "Skóre: {0} z {1} (BEZ CHYB!)",
+  "message.confirmNewGame": "Nedokončili jste tuto hru.\nChcete opravdu začít novou  hru?"
+}

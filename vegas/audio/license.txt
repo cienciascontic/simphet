@@ -1,0 +1,8 @@
+boing.mp3 source=freesound.org, Creative Commons 0 license, modified by John B
+boing.ogg source=freesound.org, Creative Commons 0 license, modified by John B
+cheer.mp3 source=PhET author=Sam Reid
+cheer.ogg source=PhET author=Sam Reid
+ding.mp3 source=PhET author=John B
+ding.ogg source=PhET author=John B
+trumpet.mp3 source=PhET author=John B
+trumpet.ogg source=PhET author=John B

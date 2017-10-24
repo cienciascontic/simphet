@@ -1,0 +1,18 @@
+{
+  "label.level": "Nivel: {0}",
+  "title.gameSettings": "Condiciones de Juego",
+  "label.score": "Puntaje: {0}",
+  "button.start": "¡Comenzar!",
+  "radioButton.on": "encender",
+  "radioButton.off": "apagar",
+  "title.gameOver": "Juego terminado",
+  "button.newGame": "Juego Nuevo",
+  "label.newBest": "!Nuevo MEJOR!",
+  "label.best": "Mejor: {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "Nivel:",
+  "label.time": "Tiempo: {0}",
+  "label.score.max": "Puntaje: {0} de {1}",
+  "label.score.max.perfect": "Puntaje: {0} de {1}(!PERFECTO!)",
+  "message.confirmNewGame": "No ha terminado este juego.\n¿Está seguro que quiere empezar uno nuevo?"
+}

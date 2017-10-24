@@ -1,0 +1,17 @@
+{
+  "label.level": "Úroveň: {0}",
+  "title.gameSettings": "Nastavenie hry",
+  "label.score": "Skóre: {0}",
+  "button.start": "Štart!",
+  "radioButton.on": "zapnúť",
+  "radioButton.off": "vypnúť",
+  "title.gameOver": "Koniec hry",
+  "button.newGame": "Nová hra",
+  "label.newBest": "Váš nový najlepší!",
+  "label.best": "Najlepšie: {0}",
+  "label.levelControl": "Úroveň:",
+  "label.time": "Čas: {0}",
+  "label.score.max": "Skóre: {0} z {1}",
+  "label.score.max.perfect": "Skóre: {0} z {1} (PERFEKTNÉ!)",
+  "message.confirmNewGame": "Túto hru ste neskončili. \nNaozaj chcete začať novú hru?"
+}

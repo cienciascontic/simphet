@@ -1,0 +1,18 @@
+{
+  "label.level": "Niveli: {0}",
+  "title.gameSettings": "Parametra të Lojës",
+  "label.score": "Pikët: {0}",
+  "button.start": "Fillo!",
+  "radioButton.on": "on",
+  "radioButton.off": "off",
+  "title.gameOver": "Loja Mbaroi",
+  "button.newGame": "Lojë e Re",
+  "label.newBest": "Më i miri I RI!",
+  "label.best": "Më i miri: {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "Niveli:",
+  "label.time": "Koha: {0}",
+  "label.score.max": "Pikët: {0} nga {1}",
+  "label.score.max.perfect": "Pikët: {0} nga {1} (PERFEKTE!)",
+  "message.confirmNewGame": "Ju nuk e keni mbaruar akoma këtë lojë.\nJeni të sigurt që doni të filloni një lojë të re?"
+}

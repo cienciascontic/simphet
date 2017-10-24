@@ -1,0 +1,18 @@
+{
+  "label.level": "等级: {0}",
+  "title.gameSettings": "游戏设置",
+  "label.score": "得分: {0}",
+  "button.start": "开始",
+  "radioButton.on": "开",
+  "radioButton.off": "关闭",
+  "title.gameOver": "游戏结束",
+  "button.newGame": "新游戏",
+  "label.newBest": "你最新最好成绩!",
+  "label.best": "你最好的: {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "等级:",
+  "label.time": "时间: {0}",
+  "label.score.max": "得分: {0} 超出 {1}",
+  "label.score.max.perfect": "得分: {0} 超出 {1} (非常棒!)",
+  "message.confirmNewGame": "你还没有结束游戏\n你确信要开始新的游戏么?"
+}

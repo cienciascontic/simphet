@@ -1,0 +1,18 @@
+{
+  "label.level": "רמה: {0}",
+  "title.gameSettings": "הגדרות המשחק",
+  "label.score": "ניקוד: {0}",
+  "button.start": "התחל!",
+  "radioButton.on": "דולק",
+  "radioButton.off": "כבוי",
+  "title.gameOver": "המשחק נגמר",
+  "button.newGame": "משחק חדש",
+  "label.newBest": "שיא חדש!",
+  "label.best": "שיא: {0}",
+  "format.time.best": "{0} ({1})",
+  "label.levelControl": "רמה:",
+  "label.time": "זמן: {0}",
+  "label.score.max": "ניקוד: {0} מתוך {1}",
+  "label.score.max.perfect": "ניקוד: {0} מתוך {1} (מושלם!)",
+  "message.confirmNewGame": "לא סיימת את המשחק.\nאתה בטוח שאתה רוצה להתחיל משחק חדש?"
+}
