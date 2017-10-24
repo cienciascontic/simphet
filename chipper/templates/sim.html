@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,minimal-ui"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="phet-sim-level" content="production">
+  <title>SIM_TITLE</title>
+<!--
+HTML_HEADER
+-->
+</head>
+<body bgcolor="black">
+<img id="splash" style="position: absolute;top: 50%;left: 50%;margin-top: -210px;margin-left: -252px;" src="SPLASH_SCREEN_DATA_URI">
+<script type="text/javascript">PHET_STRINGS</script>
+<script type="text/javascript">PHET_INFO</script>
+<script type="text/javascript">
+  window.phetStrings.get = function( key ) {
+
+    //Support translation by query parameter to enable translation in the browser
+    return window.phetcommon.getQueryParameter( key ) || window.phetStrings[key];
+  };
+</script>
+<script type="text/javascript">PRELOAD_INLINE_JAVASCRIPT</script>
+<script type="text/javascript">MAIN_INLINE_JAVASCRIPT</script>
+</body>
+</html>
