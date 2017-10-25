@@ -1,0 +1,19 @@
+{
+  "name": "ph-scale-basics",
+  "version": "1.2.0-dev.1",
+  "phetLibs": "ph-scale-basics assert axon brand dot joist kite nitroglycerin phet-core phetcommon ph-scale scenery scenery-phet sun sherpa",
+  "preload": "../assert/js/assert.js ../sherpa/jquery-2.1.0.js ../sherpa/lodash-2.4.1.js ../sherpa/has.js ../sherpa/FileSaver.js ../phetcommon/js/util/query-parameters.js ../phetcommon/js/util/check-assertions.js ../phetcommon/js/analytics/google-analytics.js",
+  "license": "GPLv3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phetsims/ph-scale-basics.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-requirejs": "~0.4.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "uglify-js": "~2.4.0",
+    "requirejs": "~2.1.8"
+  },
+  "simTitleStringKey": "PH_SCALE/ph-scale-basics.name"
+}

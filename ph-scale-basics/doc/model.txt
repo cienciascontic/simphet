@@ -1,0 +1,2 @@
+This simulation consists of one screen from ph-scale.
+Please see the ph-scale repository for details.

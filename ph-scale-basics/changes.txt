@@ -1,0 +1,22 @@
+# 1.1.0 branched 8/19/14
+7/29/14 check in ph-scale-basics-128.png (website thumbnail)
+5/27/14 change 'imports' to 'modules' in require comments
+5/16/14 #38 fix: water faucet is disabled after switching solvents
+3/24/14 #37 fix initial state of water faucet
+2/27/14 change name of screen in ph-scale from 'Basics' to 'Macro'
+1/23/14 move sim title to ph-scale-basics-strings_en.json
+12/23/13 add 'in part' to RSC funding notice
+12/20/13 add model.txt and implementation-notes.txt
+12/17/13 branched 1.0
+# 1.0.0-dev.9 12/12/13
+# 1.0.0-dev.8 12/9/13
+# 1.0.0-dev.7 12/6/13
+# 1.0.0-dev.6 12/6/13
+# 1.0.0-dev.5 12/3/13
+# 1.0.0-dev.4 11/21/13
+# 1.0.0-dev.3 11/20/13
+# 1.0.0-dev.2 11/15/13
+# 1.0.0-dev.1 11/13/13
+11/13/13 **** feature complete ****
+11/13/13 set up sim framework, gets everything from ph-scale
+11/13/13 created repo
