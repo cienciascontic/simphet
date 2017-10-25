@@ -1,0 +1,516 @@
+11/18/14 #54 replace 'Beer' with 'Orange Juice'
+10/20/14 replace VBox with LayoutBox throughout
+10/1/14 use new JSdoc conventions for @param
+9/29/14 #53 fix bug in pH meter 'down' arrow
+9/8/14 use {Object} instead of {*} as type expression for options param
+8/19/14 #50 fix drag bounds of pH meter
+# 1.1 branched 8/19/14
+7/29/14 check in ph-scale-128.png (website thumbnail)
+6/26/14 #48 replace explicit prototype assignment with inherit(Object,...)
+6/26/14 #47 change mvt to modelViewTransform
+5/27/14 change 'imports' to 'modules' in require comments
+5/16/14 ph-scale-basics#38 fix: water faucet is disabled after switching solvents
+3/24/14 ph-scale-basics#37 fix initial state of water faucet
+3/20/14 #43 change zoom range of Linear scale
+3/17/14 #40 eliminate display of incorrect intermediate 'Molecule count' values, remove dependency in PHModel on Solution
+3/13/14 delete TODO.txt
+3/13/14 #39 provide navbar-specific icons to improve quality
+# 1.0 branched 3/8/14
+3/8/14 #38 zoom buttons: attach handle so that its line cap doesn't appear inside glassNode
+# 1.0.0-dev.20 3/6/14
+3/6/14 #28 when changing the solute, cancel any multi-touch interaction that may be in progress with the faucets
+3/6/14 #25 use atomic method of changing water and solution volume only when both values are changing, otherwise notification may not happen
+3/6/14 add check for zero volume in Solution.drain, so that we're not doing unnecessary work every frame
+3/6/14 #32 tap-to-dispense fixed on Win+Chrome via a fix to scenery.SimpleDragHandler
+3/6/14 #33 fix infinite bounds cycle by changing how we position value in graph indicators
+3/6/14 #25 prevent intermediate pH value changes when changing the volume of water and solute simultaneously, so that 'ratio' doesn't update while draining
+3/6/14 #26 new colors for 'blood' and 'hand soap', so that H3O+ molecules are visible with 'ratio' feature
+3/6/14 move pH probe from 'center' to 'right' position for 'Custom' screen, move meter slightly to left so probe doesn't hit molecule counts
+3/6/14 move pH probe behind ratio and molecule counts, so that it doesn't obscure these and looks more like probe is in solution
+3/6/14 #37 fix Reset All for graph in 'Custom' screen, use PropertySet for all properties internal to GraphNode
+3/6/14 #35 fix Reset All for pH meters, add expandedProperty to viewProperties for both graph and pH meter
+# 1.0.0-dev.19 3/5/14
+3/5/14 fix potential ordering dependency in how value is positioned in graph indicator
+3/5/14 restore 'ratio' feature in production version
+3/5/14 #25 ratio performance enhancements: use Float32Array if available, pre-allocate max array size, replace Util.toFixedNumber with Math.round
+3/5/14 #25 ratio: store molecule locations so that they don't move when solution volume changes and pH remains constant
+3/5/14 #24 ratio: added workaround for clipping issue, general problem is scenery#200
+3/5/14 exclude 'ratio' feature from production version until we work out issues
+# 1.0.0-dev.18 3/5/14
+3/5/14 pH meter: replace picker with up/down arrow buttons
+3/4/14 port strings from Java
+3/4/14 pH Meter: increase height of touch area for pH picker, increase space between pH picker and expand/collapse button
+# 1.0.0-dev.17 3/4/14
+3/4/14 ratio: increase to 3000 molecules, 1000 wasn't showing obvious differences for pH values in the 'linear' range
+3/4/14 #23 stylistic, remove curly braces around layout code in MoleculeCountNode
+3/4/14 #10 change ScientificNotationNode to use Property instead of setValue
+3/3/14 #16 add note about indicator code to JSdoc
+3/4/14 #22 stylistic, add blank lines before some comments
+# 1.0.0-dev.16 2/28/14
+3/4/14 RatioNode cleanup
+3/4/14 enable 'ratio' feature in production version, since it's now usable on all platforms
+3/4/14 ratio: use scenery to create molecule images, which are then drawn directly to canvas
+3/4/14 delete node-per-molecule strategy from 'ratio' feature since it's unusably slow
+3/4/14 increase performance of 'ratio' feature by using drawImage instead of arc
+3/4/14 tweak spacing in 'H3O+/OH-' label
+3/4/14 tweak the y-spacing above and below the beaker controls
+3/4/14 tweak the x-spacing in formulas, so that H3O+ isn't so spread out
+3/3/14 simplify FaucetFluidNode constructor, so that it uniformly takes a colorProperty parameter and doesn't rely on duck-typing of solution
+3/3/14 #21 replace water property in model with direct access of Water constant at various use sites
+3/3/14 #20 remove unused exponentRange parameter from LinearGraph constructor
+3/3/14 #18 factor out options that are common to all ScientificNotationNode instantiations
+3/3/14 #14 bind added to linked functions in MoleculeCountNode
+3/3/14 #9 create arrow only for interactive graph indicators
+3/3/14 #7 change '**' to '^' for exponent operator in model.txt
+3/3/14 delete unused dropper-icon.png
+3/3/14 #8 horizontally flip dropper images so that lighting is consistent with other parts of the sim
+3/3/14 ratio: reduced number of molecules to 1000, use CanvasNode, performance is much better
+3/3/14 update implementation-notes.txt
+3/3/14 fixed logic for hiding 'ratio' feature
+3/3/14 move PHScaleNode to inner type of MacroPHMeterNode, since it's only used there
+3/3/14 replace GraphIndicator subtypes with factory functions
+3/3/14 move molecules and atoms to common/view/molecules/
+3/3/14 add flag to RatioNode for disabling feature, so that all aspects of this feature are in one file
+3/3/14 fix x-spacing of log graph indicators, broken when major ticks were made longer
+3/3/14 move html formulas to PHScaleConstants to avoid duplication
+3/3/14 format all code to match PhetStyle.xml
+3/3/14 migrate ph-scale.ScientificNotationNode to scenery-phet
+3/3/14 add this.mutate(options) to ScientificNotationNode
+3/3/14 migrate ph-scale.SubSupText to scenery-phet
+3/3/14 position superscripts relative to cap line in SubSupText
+3/3/14 generalize ph-scale.ZoomButton and migrate to scenery-phet
+3/3/14 add this.mutate(options) to ZoomButton
+3/3/14 make major ticks 50% longer on log scale
+# 1.0.0-dev.15 2/27/14
+2/28/14 reimplement 'H3O/OH ratio' check box label to use SubSupText and include color-coding
+2/28/14 fix: H2O value is displaying at '55.0', should be '55'
+2/28/14 use SubSupText for '10^E' ticks on log graph, remove 'no mantissa' support from ScientificNotationNode
+2/28/14 eliminate unnecessary string-number conversions in ScientificNotationNode
+2/28/14 first pass at parsing HTML in SubSupText node, and creating scene graph based exclusively on scenery.Text
+2/28/14 fix pointer areas for interactive graph indicators
+2/28/14 replace HTMLText with ScientificNotationNode, efficient node for rendering numbers in scientific notation (M x 10^E)
+# 1.0.0-dev.14 2/27/14
+2/27/14 expand pointer areas (touch and mouse) for pH picker
+2/27/14 rename 'Solutions' -> 'Micro' throughout (code, images, file names, directory structure)
+2/27/14 rename 'Basics' -> 'Macro' throughout (code, images, file names, directory structure)
+2/27/14 add 'off scale' to strings file
+2/27/14 increase y-spacing in pH meter, so that picker isn't so close to expand/collapse button
+2/27/14 restrict size of 'off scale' label for i18n, so that the label fits inside the arrow
+2/27/14 remove option to have linear scale with no arrow at the top, decided to always show the arrow
+2/27/14 make zoom buttons a bit larger, increase horizontal space between them, make linear scale a bit shorter to avoid crowding buttons
+2/27/14 change top margin to 15 for 'Micro' and 'Custom' screens
+2/27/14 disable icon in zoom button when the button is disabled
+2/27/14 touch area for expand/collapse button in pH meter
+2/27/14 make 'off screen' label slightly larger
+2/27/14 refine options for SubSupText
+2/24/14 start fleshing out SubSupText with options and setters/getters
+2/24/14 clicking on faucet shooter cancels any tap-to-dispense that may be in progress, scenery-phet#31
+2/24/14 #4, limit precision of pH in model so that consistent values are presented to user
+2/24/14 #3 investigate why interactive graph indicators are failing on iPad, traced to scenery.HTMLText, abandoned there
+2/24/14 prevent needless creation of an additional custom solute in the case where the pH is unchanged
+2/20/14 fix problem with timers in tap-to-dispense feature of FaucetNode, phetsims/phet-scale#1, phetsims/scenery-phet#31
+# 1.0.0-dev.13 2/15/14
+2/15/14 add interactive arrows to graph indicators
+2/15/14 delete handle and shadow from interactive graph indicators, in preparation for adding arrows
+2/15/14 changes options interface for tap-to-dispense feature in FaucetNode
+2/12/14 revised 'Custom' screen icon, .ai file for all screen icons
+# 1.0.0-dev.12 2/12/14
+2/12/14 change tap-to-dispense parameters: flowRate=0.15, interval=333
+2/12/14 lighten color of pH probe from RGB(80,80,80) to RGB(140,140,140)
+2/12/14 new screen names: Basics -> Macro, Solutions -> Micro
+2/12/14 new icon for 'Custom' screen
+# 1.0.0-dev.11 2/12/14
+2/12/14 add tap-to-dispense feature to faucets, dispense 0.01L in 0.5 sec
+2/11/14 temporarily hide the 'ratio' feature if we're not running in dev mode, so it doesn't interfere with interviews
+# 1.0.0-dev.10 2/10/14
+2/10/14 offset the H2O indicator when off scale, so it doesn't butt up again OH indicator
+2/10/14 shorten line between expand/collapse box and graph scale, remove masking hack from linear graph
+2/10/14 reduce height of linear scale a bit, so that zoom buttons aren't crowded by graph indicators, may make them more inviting
+2/10/14 restore original height of log scale in 'Solutions' so that indicators don't overlap scale switch when beaker is empty
+2/10/14 increase height of arrow head on linear graph
+2/10/14 increase y-margin on linear scale, so that it looks more balanced and is similar to log scale
+2/10/14 increase horizontal spacing between zoom buttons a bit, increase touch areas
+2/10/14 Custom: made log scale a tag shorter, so that there's some whitespace below graph indicators when they're dragged to bottom of screen
+2/10/14 reduce y-margin on log scale from 40 to 30
+2/10/14 make log scale taller in 'Solutions' screen
+2/10/14 decouple heights of log and linear scales
+2/10/14 fix display of H2O values on graph indicators, broken when I rewrote toScientificNotation on 1/29/14
+2/10/14 make arrow always visible in linear graph, not just when some value is off-scale
+2/10/14 add a break below arrow head in linear graph
+2/10/14 slow down auto-fill animation (from 0.5 sec to 0.65 sec) because it seemed a little fast
+2/10/14 fixed bug in scenery-phet.NumberPicker that was causing multiple timers to be created, giving the appearance of being stuck, most noticeable on iPad
+2/10/14 apply 'Reset All' to the graphs
+2/10/14 fill linear graph scale with gray RGB(230,230,230), which is roughly the fill at the the midpoint of the log scale
+2/10/14 horizontally center major tick labels in log graph
+2/10/14 make linear and log graph scales wider, so we can use a larger tick font in linear
+2/10/14 swap positions of zoom in/out buttons, 'out' on left, 'in' on right
+1/30/14 set RatioNode.visible=false before it has a chance to create molecules, to reduce startup time
+1/29/14 replace RatioNodeWithCanvas with strategy pattern in RatioNode
+1/29/14 make RatioNode implementation more similar to RatioNodeWithCanvas, ie with inner type MoleculesNode
+1/29/14 use view coordinates to clip ratio feature to solution bounds
+1/29/14 first attempt at a version of RatioNode that draws to Canvas using CanvasNode (not working, messes up the entire scene)
+1/29/14 fix 'this' errors in RatioNode
+1/29/14 rename toTimesTenString to toScientificNotation
+1/29/14 rewrite toTimesTenString
+1/29/14 fix: in Molecule counts, mantissa for H2O values is missing a decimal place (eg '4.0 x 10^25' should be '4.00 x 10^25')
+1/28/14 remove CustomModel.step 'do nothing' function, since screen.model.step is now optional in joist.Sim.animationLoop
+1/28/14 move SolutionsGraphNode to common.view.graph.GraphNode
+1/28/14 factor out duplication in CustomGraphNode and SolutionsGraphNode, make linear graph and interactive options to SolutionsGraphNode
+# 1.0.0-dev.9 1/23/14
+1/27/14 linear graph: add 'off scale' label in arrow
+1/27/14 linear graph: position indicators correctly
+1/27/14 linear graph: add indicators, values are correct, position is not correct (always at zero)
+1/27/14 linear graph: add arrow to top of scale, implement tick marks, wire up zoom buttons
+# 1.0.0-dev.8 1/23/14
+1/27/14 add jsdoc @private tags throughout code
+1/27/14 make autoFill and option of BasicModel, instead of a constructor param
+1/27/14 make SolutionsModel a subtype of BasicsModel, which gives us auto-fill animation and eliminates duplicate code
+1/27/14 add animation of auto-fill to 'Basics' model
+1/27/14 make DropperFluidNode observe Dropper.flowRateProperty instead of onProperty and emptyProperty
+1/27/14 delete unused optional arg from Solute.createCustom
+1/27/14 use same location for water faucet in 'Basics' and 'Solutions' screens
+1/27/14 use same location and size for beakers in all 3 screens, ensure that dropper is above beaker
+1/27/14 make it easier to adjust vertical spacing of zoom buttons and Log/Linear switch
+1/27/14 add vertical line between graph and Linear/Log switch
+1/27/14 use water color for custom solution
+1/27/14 integrate new 'Solutions' icon, use old 'Solutions' icon for 'Basics' screen
+# 1.0.0-dev.7 1/23/14
+1/23/14 add option to connect probe to left|center|right of pH meter
+1/23/14 RatioNode: reduce lots of Vector2 allocations by computing x and y coordinates separately
+1/23/14 fix Reset All so that it fills 0.5L
+1/23/14 center controls under beaker, because it looks better and we have room for i18n now
+1/23/14 move linear graph to Solutions screen
+1/23/14 rounded corners on pH probe tip
+1/23/14 add a probe to pH meter that extends to bottom of beaker
+1/23/14 combine SolutionsPHMeterNode and CustomPHMeterNode into a single meter that optionally allows you to change pH
+1/23/14 Custom: make beaker same size and location as Solutions screen
+1/23/14 Solutions: make beaker wider, scale up 'Molecule count' feature
+1/23/14 Solutions: remove code related to aligning scales of graph and pH meter, since the pH meter no longer has a scale
+1/23/14 Solutions: remove scale from pH meter
+1/23/14 revert: Custom: don't collapse meter when collapse button is pressed, just hide pH picker
+1/23/14 Custom: remove dropper and drain, use a fixed volume of solution
+1/23/14 Custom: don't collapse meter when collapse button is pressed, just hide pH picker
+1/23/14 fix: initial graph layout got hosed by non-zero initial volume
+1/23/14 Basics: auto-fill with a specified volume when a solute is selected. Set this to 0L for ph-scale-basics, 0.5L for ph-scale.
+1/23/14 fix: pH picker doesn't always disable properly at end of range, causes pH to exceed range
+1/23/14 require non-zero volume to be at least 0.1L, same as precision of volume indicator on beaker
+1/23/14 make pH picker advance faster when held (reduced intervalDelay to 40ms from 100ms)
+1/23/14 shorter points on graph indicators, move indicators closer to scale, less whitespace between scale and indicators (ok to overlap ticks)
+1/23/14 move 'Reset All' buttons to same position (lower right) in all screens
+1/23/14 add temporary icon for 'Basics' screen
+1/23/14 move ph-scale-basics sim title to ph-scale-basics-strings_en.json
+1/23/13 make 'Basics' screen an official part of ph-scale sim
+1/23/13 MAJOR DESIGN CHANGES REQUESTED
+# 1.0.0-dev.6 1/22/14
+1/22/14 clip ratio feature to shape of solution in beaker
+1/22/14 implement ratio feature as it was in Java, too slow to be usable, not clipped to solution bounds
+1/22/14 add Beaker.bounds convenience property
+1/21/14 replace instances of HTMLText with SubSupText
+# 1.0.0-dev.5 1/21/14
+1/21/14 zoom buttons for linear graph
+1/20/14 robust implementation for vertical alignment of graph and pH scales
+1/20/14 add options.range to PHScaleNode
+1/19/14 reorganize CustomGraphNode so that order of instantiation in constructor matches order of appearance
+1/19/14 detect and remember the graph ticks that correspond to the min and max pH values
+1/19/14 move 'guide' lines for alignment of scale to the top and bottom ticks of the pH scale
+1/19/14 temporary solution for vertical alignment of graph and pH scales
+1/16/14 placeholder for SubSupText
+1/16/14 center log/linear switch
+1/16/14 shrink units switch if it exceeds maximum width, to handle i18n
+1/16/14 migrate ExpandCollapseBar to sun
+1/16/14 generalize ExpandCollapseBar
+1/16/14 add placeholder for LinearGraph
+1/16/14 attach beaker controls to left edge of beaker so that i18n strings have room to grow
+1/16/14 shrink 'Molecule count' feature slightly and reposition so that it doesn't overlap beaker tick labels
+1/16/14 migrate OnOffSwitch and ABSwitch to sun
+1/16/14 change look of ABSwitch labels based on which one is selected
+1/16/14 generalize ABSwitch so that the labels are {Node} instead of {String}, and it handles enable/disable of the labels
+1/16/14 change the cursor when interactive graph indicators are disabled
+# 1.0.0-dev.4 1/15/14
+1/15/14 push duplicate code into GraphIndicatorDragHandler
+1/15/14 change the structure of PHModel, it was acting flakey when returning an object literal
+1/15/14 move responsibility of creating 'custom' solute from Solution setters to LogarithmicGraph
+1/15/14 remove unused polymorphism in Solution.getConcentration*
+1/15/14 PHModel.pHToConcentrationOH calls pHToConcentrationH3O
+1/15/14 PHModel: handle null pH cases, add doc
+1/15/14 factor out all core computations into PHModel, reducing complexity of Solution
+1/15/14 Solution: factor out pH calculations into static functions
+1/15/14 GraphIndicator: pickable=false for nodes that don't need to be involved in interactivity
+1/15/14 add invisible rectangle on top of graph indicator handle, so that space between handle and body isn't a dead zone
+1/15/14 tweak shadow on graph indicators so that they appear to float
+1/15/14 remove 'Node' suffix from GraphIndicator and subtypes
+1/15/14 new screen icons from YY
+1/15/14 constrain pH to valid range when dragging the graph indicators
+1/15/14 make graph indicators look disabled (using opacity) when value is zero
+1/15/14 GraphIndicatorNode: replace multiple options with isInteractive
+1/14/14 Custom: first attempt at making graph indicators interactive, has some range problems
+1/14/14 throw an Error when attempting to construct a Solute with a pH value that is out of range
+1/14/14 use linkAttribute to wire up view properties that control visibility
+1/14/14 use 'children' option to add nodes to each ScreenView's rootNode
+1/14/14 rename Solution.drain to drainSolution for clarify as call sites
+1/14/14 make RatioNode responsible for its own positioning
+1/14/14 expand touchArea for picker in 'Custom' pH meter
+1/14/14 fix: show 'Solutions' pH meter pointer only if meter is expanded
+1/14/14 add option.emptyWhenSoluteChanges to Solution, needed for 'Custom' screen where a new custom solute is created as the pH changes
+1/14/14 MAJOR CHANGE: make Solute immutable, change pH of 'custom' solution by creating new Solute instances when the pH changes
+1/14/14 bug fix in BasicsPHMeterNode, 'enabled' fill was null
+1/14/14 factor out PHScaleColors.PANEL_FILL, color for all panels and expand/collapse bars
+1/13/14 integrate NumberPicker into CustomPHMeterNode
+1/13/14 ditch ExpandCollapseBar in CustomMeterNode, implement something specific to what's needed
+1/13/14 ditch ExpandCollapseBar in SolutionsMeterNode, implement something specific to what's needed
+1/13/14 change requests for graphs
+1/13/14 use light gray for pH meters and expand/collapse bars, adjust colors and strokes
+1/13/14 Solutions: move units AB-switch into expand/collapse bar
+1/13/14 Solutions: move expand/collapse bar into SolutionsGraphNode
+1/9/14 Custom: add expand/collapse feature to pH meter
+1/9/14 generalize ExpandCollapseBar so that it title can be any scenery.Node
+1/9/14 move expand/collapse bar instance into SolutionsPHMeterNode
+1/9/14 change interface to ExpandCollapseBar
+1/9/14 add expand/collapse button to SolutionsPHMeterNode
+1/9/14 move colors into pH meters, since they are no longer shared across screens
+1/9/14 merge PHValueNode into SolutionsPHMeter, since it will now have it's own (very different) way of working
+1/9/14 create CustomPHMeterNode, since 'Custom' screen will now have it's own (very different) pH meter
+1/9/14 move code for displaying pH value into BasicsPHMeterNode, since it no longer shares design with the other screens
+1/8/14 use toExponential instead of toPrecision in PHUtils.toTimesTenString
+# 1.0.0-dev.3 1/8/14
+1/8/14 show graph guides only in dev mode
+1/6/14 add multi-line labels to units ABSwitch, put 'Graph' in title bar
+1/6/14 change title in graph's bar when units are changed
+1/6/14 delete the rightTitle option from ExpandCollapseBar, add setTitle function
+1/6/14 show zoom buttons only for Linear scale
+1/6/14 wire up log graph to display quantity (moles)
+1/6/14 add minor tick marks to graph, add options
+1/6/14 move graph indicators when concentrations change
+1/3/14 add additional options to LogConcentrationGraph
+1/3/14 add placeholder for quantity graph, wire up to AB switch
+1/3/14 wire up graph indicator values to solution
+1/3/14 make graph indicators non-interactive by default (no handle, no shadow)
+1/3/14 optional handle on graph indicators
+1/2/14 move graph components to common/view/graph/
+1/2/14 create subtypes for graph indicators
+1/2/14 support various locations of pointer on graph indicator
+1/2/14 add optional drop-shadow to graph indicator
+12/26/13 more work on graph indicator
+12/26/13 partial implementation of graph indicator
+12/23/13 remove unused imports, identified by adding 'unused: true' to jshint-options.js
+12/23/13 Basics: revert pH probe and wire to back, so that dashed indicator line is visible
+12/23/13 add 'in part' to RSC funding notice
+12/20/13 cleanup of color-stop in Solute
+12/20/13 move computation of color into Solute, since it knows about the color scheme
+12/20/13 make solution color change more slowly by moving optional color-stop from 0.5 to 0.25, and making the color-stop ratio configurable per solute, ph-scale-basics#34
+12/20/13 move duplicate code related to filling/draining into Solution model element
+12/20/13 fix: pH value changes when draining at low volume, ph-scale-basics#19
+12/20/13 change import pattern for dot.Util.log10
+12/20/13 add implementation-notes.txt and model.txt
+12/20/13 migrate MovableDragHandler to scenery-phet, ph-scale-basics#26
+12/20/13 change Solute constructor, ph-scale-basics#14
+12/19/13 change test for minimum-volume threshold in SolutionNode
+12/18/13 misc doc changes requested during code review
+12/18/13 added verbose documentation about where things are positioned in the models, as requested in review
+12/18/13 put pH meter on top of rendering order, allow it to be dragged anywhere in the ScreenView's layoutBounds
+12/18/13 add PHScaleConstants.LAYOUT_BOUNDS, use in all ScreenView constructors
+12/18/13 put probe in foreground in BasicsPHMeterNode, so it can't get lost behind pH display
+12/18/13 use 'return inherit(....)' consistently
+12/17/13 Custom: move zoom buttons to bottom of graph, near the control that makes them visible/invisible
+12/17/13 Solutions: fix layout problems that were introduced by changes to Basics
+12/17/13 Custom: fix layout problems that were introduced by changes to Basics
+12/17/13 lint fix
+12/17/13 delete vestigial option.labelNeutral from PHScaleNode
+12/17/13 emphasize the '7' tick mark more on the pH scale by using 'Arial black' font family
+12/12/13 change color of pH probe image to green, adjust color of pH display to match
+12/12/13 change color of pH display to green, change implementation to include optional 'enabled' property
+12/12/13 Basics: move pH meter down a bit, so that pH value doesn't go off-screen when pH=15
+12/12/13 Basics: tweak layout
+12/12/13 Basics: make beaker wider
+12/12/13 compute water faucet pipe length based on beaker's right edge
+12/12/13 reflect drain faucet, move to left of beaker
+12/12/13 ticks on both sides of beaker, tick labels on right
+12/12/13 flip volume indicator and move it to right side of beaker
+12/12/13 Basics: move 'Reset All' button to lower-right
+12/12/13 Basics: show 'Neutral' label in solution when displayed pH='7.00'
+12/12/13 Basics: replace button-like '(Neutral) 7' tick with '7', use larger font, use 'neutral' color
+# 1.0.0-dev.2 12/11/13
+12/11/13 make AB buttons 25% larger
+12/11/13 Custom:  add placeholders for zoom buttons in graph
+12/11/13 add option to ABSwitch that makes it easier to horizontally center on its button
+12/11/13 implement view-specific properties using axon.PropertySet
+12/11/13 add view properties for graph switches, add to 'Reset All'
+12/11/13 compute scale height and layout of graphs
+12/11/13 Custom: add log/linear switch to graph
+12/11/13 Solutions: fix reset of beaker controls
+12/11/13 Solutions: fix layout problems with pH meter that were caused by flipping
+12/11/13 Solutions: flip indicator on pH meter
+12/11/13 adjust 'guide' size for graphs
+12/11/13 Solutions, Custom: move 'Reset All' button to left of beaker controls
+12/11/13 anchor beaker controls to right edge of beaker, so it grows left for i18n
+12/11/13 make drain faucet appear is same location for 'Solutions' and 'Custom' screens
+12/11/13 adds outline 'guides' for graphs, for use during design/development
+12/11/13 Solutions: flip everything LTR, fix (most) problems that flipping 'Basics' caused
+12/11/13 Custom: don't display water color when pH='7.00', since there's no water in this screen
+12/11/13 Custom: flip everything LTR
+12/9/13 Basics: anchor combo box on it's left edge, for i18n
+12/9/13 fix color of PHValueNode and ExpandCollapseBar, use sRGB
+12/9/13 shorten vertical pipe on drain faucet, so that pH probe fits below it
+12/9/13 Basics: fix positioning of probe to account for it being reflected horizontally
+12/9/13 Basics: delete unused param from BasicsPHMeterNode.WireNode constructor
+12/9/13 Basics: put pH indicator in a different coordinate frame, move PHValueNode behind probe and wire in rendering order
+12/9/13 Basics: use opaque gray for disabled PHValueNode, so that wire behind it doesn't show through
+12/9/13 add optional midpoint color for some solutions, rewrite algorithm for computing solution color
+12/9/13 Basics: decrease length of drain pipe, move beaker slightly to the right
+12/9/13 Basics: adjust pH meter wire control points so that the wire looks good when measuring the drain
+12/9/13 Basics: make beaker slightly narrower so that drain faucet plunger isn't being dragged right up to edge of screen
+12/9/13 Basics: move pH meter slightly right to so that we have some room to accommodate i18n of 'Neutral (7)'
+12/9/13 Basics: make pH scale narrower so that we have some room to accommodate i18n of 'Neutral (7)'
+12/9/13 Basics: right-justify combo box relative to faucet, so it has room to grow left for i18n
+12/9/13 Basics: compute all locations using the beaker location and size
+12/9/13 Basics: move 'Reset All' button to lower-right, so that it's not in the way when using pH probe to measure drain
+12/9/13 Basics: reduce height of beaker and move it up, so that pH probe fits under the drain faucet
+12/9/13 Basics: adjust drag bounds of pH probe
+12/9/13 Basics: pH meter body is not draggable, so don't make the body a 'Movable'
+12/9/13 use same line width for button border and vertical separator in combo box, sun#42
+12/9/13 Basics: add rounded rectangle around '(Neutral) 7' tick label, fill with 'neutral' color
+12/9/13 Basics: fix wire control points on pH meter
+12/9/13 Basics: change pH tick label to '(Neutral) 7'
+12/9/13 Basics: adjust location of combo box
+12/9/13 Basics: adjust drag bounds for dropper, so that it's above new beaker location and doesn't overlap water faucet touchArea
+12/9/13 reflect water faucet so that it points left, adjust location of 'Water' label
+12/9/13 Basics: move beaker to right side of screen, move pH meter to left side of screen
+12/9/13 make volume value bold
+12/9/13 horizontally flip pH probe, connect wire to left side (control points for wire are wrong)
+12/9/13 Basics: move pH indicator to right side of pH scale
+12/9/13 move ticks to right side of pH scale
+12/9/13 add a color-stop for 'neutral' to pH scale gradient (RGB=164,58,149)
+12/9/13 use specified color for 'Chicken Soup'
+12/9/13 rename Solute.LIME_SODA to Solute.SODA
+12/7/13 flatten faucet type hierarchy, in preparation for reflecting water faucet
+12/7/13 change request: add 'Chicken Soup', make it the default
+12/6/13 feature request: add highlight around pH value display when the displayed value is '7.00'
+12/5/13 add options for SoluteComboBox: increase lineWidth and cornerRadius
+12/4/13 Solutions: partial implementation of linear concentration graph
+12/4/13 add 'Basics' screen to 'pH Scale' sim only in dev mode                                                                                                                   42
+12/3/13 use saturated blue (as shown in design doc) for 'H2O' background in 'Molecule count' and graph indicator
+12/3/13 use water color as the 'diluted' color for all solutions, as shown in the design doc
+12/3/13 change colors of milk and spit, as shown in the design doc
+12/3/13 when a diluted solution reads '7.00' on the pH meter, use water color
+12/3/13 internal refactoring of Solution model, moved some functions to prototype, made color derived from solute and pH
+12/3/13 change font on volume indicator to be same size as tick labels on the beaker
+11/27/13 use 'water' instead of 'solvent' throughout, since our model only makes sense for water and we don't need to support other solvents
+11/27/13 adjust touchArea of dropper so that it doesn't interfere with solute combo box
+11/27/13 expand touchArea for expand/collapse buttons
+11/27/13 expand touchArea for check boxes
+11/27/13 review and cleanup of all code
+11/27/13 move toTimesTenString to PHUtils
+11/27/13 use fixed exponent of 25 for H2O molecule count, use 2 decimal places instead of 1
+11/27/13 rename ChoiceSwitch to ABSwitch
+11/27/13 make OnOffSwitch behave identically to iOS UISwitch
+11/27/13 add enums for graph type and units
+11/27/13 move PHMeter to basics.model
+11/27/13 don't use PHMeter model element in 'Solutions' and 'Custom' screens
+11/27/13 generalize OnOffSwitch and ChoiceSwitch
+11/27/13 implement the iOS-like switch for the graph options
+# 1.0.0-dev.1 11/26/13
+11/26/13 add placeholder for 'ratio' feature
+11/26/13 use CSS to color-code the 'H3O+/OH- ratio' label
+11/26/13 make exponents smaller using CSS in 'Molecule count' view
+11/26/13 add 'Molecule count' view
+11/26/13 add color-coding to 'H3O+/OH- ratio' label
+11/26/13 fix colors, sample using sRBG
+11/26/13 adjust colors of atoms
+11/26/13 nodes for atoms and molecules
+11/26/13 change order of beaker controls
+11/25/13 Solutions: make beaker slightly shorter to accommodate control panel below beaker
+11/25/13 add beaker controls to 'Solutions' screen
+11/25/13 add graph placeholder to 'Custom' screen
+11/25/13 revert to using same color for drain cleaner and battery acid, this was intentional
+11/25/13 Basics: make 'milk' the initial solute
+11/25/13 use smaller default font for title(s) on ExpandCollapseBar
+11/25/13 Basics: hide pointer on pH meter when it's not displaying a value
+11/25/13 Basics: move water faucet down a bit
+11/25/13 move 'Water' label on faucet
+11/25/13 remove 'decoration' option from scenery-phet.FaucetNode
+11/22/13 Solutions: adjust layout and sizes of match design doc
+11/22/13 add 'rightTitle' option to ExpandCollapseBar
+11/21/13 Solutions: add expand/collapse bar for graph
+11/21/13 add optional 'rightTitle' to ExpandCollapseBar, to support graphs
+11/21/13 Solutions: add placeholder (rectangle) for graph, in order to work on general layout
+11/21/13 Solutions: expand/collapse bar for pH meter
+11/21/13 implement pH meter for 'Solutions' screen
+11/21/13 set up model and view for 'Solutions' screen
+11/21/13 make 'Neutral' label optional on PHScaleNode, since it's only labeled in 'Basics' sim
+11/21/13 change request: 'spit' color should be closer to 'water', try RGB=200,230,230
+11/21/13 change request: use a more saturated blue for 'drain cleaner', to distinguish it from water, try RGB=92,111,255
+11/21/13 change request: make 'milk' more 'off white', try RGB=250,250,250
+11/21/13 change request: bold font for 'Acidic', 'Basic', 'pH' and '7 (Neutral)'
+11/21/13 change request: increase y-margin on pH value display
+11/20/13 use a darker gray for pH meter wire, since it overlaps the gray faucet so frequently
+11/20/13 prevent total volume from exceeding max
+11/20/13 tweak all 'diluted' solute colors
+11/20/13 change 'Drain Cleaner' color to toilet-bowl-cleaner blue
+11/19/13 fix 'reset all' for 'Basics' screen
+11/19/13 use same color as beers-law-lab for water
+11/19/13 switch to a color range for solutes
+11/19/13 make 'color' static for solvent and solute, it's dynamic only for solution
+11/19/13 add bulky background to pH value display in 'Basics'
+11/19/13 factor out PHValueNode, to be reused in all pH meters
+11/19/13 move pH indicator (arrow) to BasicPHMeterNode, since the indicator is different in all 3 meters
+11/19/13 when changing solute, drop solution volume to zero
+11/18/13 add separator in beaker control panel
+11/18/13 extract PHScaleNode, to be used in both 'Basics' and 'Solutions' pH meters
+11/18/13 prepare 'pH scale' portion of Basics pH meter for reuse in 'Solutions' screen
+11/18/13 adjust drag bounds of dropper
+11/18/13 light gray background for control panel
+11/18/13 add 'Molecule count' and 'ratio' check boxes (no view components yet)
+11/18/13 add options to various model elements, simplify usage of constructors, fix 'Reset All'
+11/18/13 use opaque colors for solutes, so that color of solution matches dropper when solution is 100% solute
+11/18/13 optionally show pH value of solute on dropper ('pH 11.00')
+11/18/13 pH meter for 'Custom' screen
+11/18/13 rename PHMeterNode to BasicsPHMeterNode, since each screen has a different meter
+11/18/13 start fleshing out model and view for 'Custom' screen
+11/18/13 move model constants to PHScaleConstants
+11/15/13 add solvent color behind solution color in beaker, make solvent (water) color opaque
+11/14/13 move PHMeterNode to basics.view package, since it's specific to 'Basics' screen
+11/13/13 revert screen background to 'white' to demonstrate problems with this color
+11/13/13 tweak initial position of water faucet
+11/13/13 move initial location of pH probe to be more similar to design doc
+11/13/13 adjust control point for connection of wire to pH meter body
+11/13/13 **** 'pH Scale: Basics' feature complete ****
+11/13/13 tweak layout
+11/13/13 fix arrow shape for volume indicator
+11/13/13 remove vestigial pH indicator showing up in upper-left corner of screen
+11/13/13 use same font and arrow size for volume and pH indicators
+11/13/13 tweak font sizes to make things look more balanced
+11/13/13 attach wire to correct location on pH meter
+11/13/13 fix indicator on pH meter
+11/13/13 cleanup and delete unused stuff in pH meter
+11/13/13 first stab at pH meter for 'Basics' (incomplete)
+11/13/13 capitalize all strings, as shown in design doc
+11/13/13 create 'Basics' screen, move stuff to there
+11/13/13 adjust layout to match mockups of 'Basics' screen
+11/13/13 label the solvent faucet with 'water'
+11/13/13 use dot.Util.toFixedNumber where appropriate, see dot#10
+11/12/13 when changing solutes, set full volume to solute, zero solvent (this is potentially problematic)
+11/12/13 change background to 'rgb(245,245,245)' because milk doesn't show up on 'white'
+11/12/13 fix NaN error when fully draining beaker
+11/12/13 replace Beaker.getLeft and getRight with properties
+11/12/13 use Util.toFixed throughout
+11/12/13 add volume indicator
+11/12/13 show pH value in combo box items
+11/12/13 temporary pH meter (concentration meter)
+11/12/13 fix computation of pH, fix assertions
+11/12/13 revert dropper fluid change, we need to use opaque colors
+11/12/13 make dropper fluid stop at the top of the solution in the beaker
+11/12/13 fix algorithm for draining solution
+11/12/13 fix 'Reset All'
+11/12/13 add fluid animation to model
+11/12/13 add dropper fluid to view
+11/12/13 solute combo box
+11/12/13 make Dropper the owner of the 'solute' property
+11/12/13 add dropper to view
+11/12/13 add faucets to view
+11/12/13 remove PropertySet from model, more trouble than it was worth
+11/12/13 add beaker to view
+11/12/13 common.model types
+11/8/13 move log10 to dot.Util
+11/8/13 Solute, Solvent, Solution model elements
+11/6/13 set up basic framework for 'Solutions' and 'Custom' screens
+11/6/13 created repo

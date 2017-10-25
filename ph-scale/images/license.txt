@@ -1,0 +1,9 @@
+Custom-home-icon.png source=PhET author=Yuen-ying Carpenter
+Custom-navbar-icon.png source=PhET author=Yuen-ying Carpenter
+dropper_background.png author=PhET notes=copied from beers-law-lab
+dropper_foreground.png author=PhET notes=copied from beers-law-lab
+Macro-home-icon.png source=PhET author=Yuen-ying Carpenter
+Macro-navbar-icon.png source=PhET author=Yuen-ying Carpenter
+Micro-home-icon.png source=PhET author=Yuen-ying Carpenter
+Micro-navbar-icon.png source=PhET author=Yuen-ying Carpenter
+pH-meter-probe.png author=PhET notes=copied from beers-law-lab
