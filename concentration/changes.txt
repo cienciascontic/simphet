@@ -1,0 +1,20 @@
+7/29/14 check in concentration-128.png (website thumbnail)
+6/9/11 branch 1.1 created
+5/27/14 change 'imports' to 'modules' in require comments
+10/29/13 joist#66, generalize handling of credits
+10/29/13 joist#69, convert to different requirejs style for main.js
+10/17/13 #10, when enabled becomes false, turn dropper off, so that we don't have odd multitouch behavior
+10/17/13 #9, dropper button gets stuck in 'down' position
+10/17/13 #10, when enabled becomes false, cancel drag on faucet, so that we don't have odd multitouch behavior
+10/14/13 #12, move concentration meter title up 2 pixels so that it looks OK on Android+Firefox
+10/14/13 #14, expand touchArea for dropper button
+10/14/13 #15, expand touchArea for Reset All button
+10/4/13 convert to string.js plugin
+9/27/13 change implementation of meter body to workaround tiling problem, see concentration#2
+9/25/13 1.0 branch created
+# 0.0.0-dev.1 9/23/13
+9/23/13 convert to use chipper 'image' plug-in
+9/19/13 remove images that are not used by this sim from package.json
+9/19/13 add stuff for single-file build process
+9/19/13 set up the skeleton for the sim
+9/19/13 create the 'concentration' repository
