@@ -1,0 +1,59 @@
+{
+  "chipper": {
+    "sha": "a70478047e72540d937907951d184c8d874543a3",
+    "branch": "master"
+  },
+  "vibe": {
+    "sha": "1df0fd08d6c312b628e8f2006f8c7466d0ab1d7f",
+    "branch": "master"
+  },
+  "sherpa": {
+    "sha": "2ee466c320f754de1e75969a89ddcfddc5b27810",
+    "branch": "master"
+  },
+  "sun": {
+    "sha": "2602b501374e578e3a890a2c00f2223a17ecbaef",
+    "branch": "master"
+  },
+  "scenery-phet": {
+    "sha": "d91779707c10a63723af38fd74092770cda16aa2",
+    "branch": "master"
+  },
+  "scenery": {
+    "sha": "2755e9bd7dd4234279d7fd8d69d63c9e3a9a1f2b",
+    "branch": "master"
+  },
+  "phetcommon": {
+    "sha": "effdd0c6e3a26eccb3da1a35e675eb5fa85e806a",
+    "branch": "master"
+  },
+  "phet-core": {
+    "sha": "29272a5ba61442021dfc10ff5fbef6cd7ce66456",
+    "branch": "master"
+  },
+  "kite": {
+    "sha": "28cacb2824575b7f947de0a0cc54c79437b7b4b0",
+    "branch": "master"
+  },
+  "joist": {
+    "sha": "d54bb2e9f3e94df8b778f146cb49270ffa8f782a",
+    "branch": "master"
+  },
+  "dot": {
+    "sha": "fd75efc81325bff24c825d55be1d016125ef0821",
+    "branch": "master"
+  },
+  "brand": {
+    "sha": "8be52066aa533f58f118abd34d73f2609c844d48",
+    "branch": "master"
+  },
+  "axon": {
+    "sha": "9dfe22ecfb7fd220489f0751c5a2c7dd0cd967f0",
+    "branch": "master"
+  },
+  "assert": {
+    "sha": "e4595f5eae375c15fa9aaba9511c52dbc1b0f2c6",
+    "branch": "master"
+  },
+  "comment": "# fraction-matcher 1.0.0-rc.3 Fri Jul 11 2014 09:01:19 GMT-0600 (Mountain Daylight Time)"
+}

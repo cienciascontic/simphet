@@ -1,0 +1,23 @@
+{
+  "fraction-matcher.name": "Fraction Matcher",
+  "fractionsTitle": "Fractions",
+  "mixedNumbersTitle": "Mixed Numbers",
+  "matchingGameHeader": "Fraction Matcher",
+  "mixedNumbersHeader": "Fraction Matcher: Mixed Numbers",
+  "patternLevel": "Level {0}",
+  "patternScore": "Score: {0}",
+  "myMatches": "My Matches",
+  "buttonCheck": "Check",
+  "buttonOk": "OK",
+  "buttonTryAgain": "Try Again",
+  "buttonShowAnswer": "Show Answer",
+  "equallyAnswerSymbol": "=",
+  "gameOver": "Game Over",
+  "patternGameOverLevel": "Level: {0}",
+  "patternGameOverScore": "Score: {0} out  of 12",
+  "patternGameOverScorePrefect": "Score: {0} out of 12 (Perfect!)",
+  "buttonNewGame": "New game",
+  "time.pattern": "Time: {0} sec",
+  "mixedNumbersChooseYourLevel": "Mixed Numbers: Choose your level!",
+  "fractionsChooseYourLevel": "Fractions: Choose your level!"
+}
