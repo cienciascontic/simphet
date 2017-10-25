@@ -1,0 +1,388 @@
+9/8/14 use {Object} instead of {*} as type expression for options param
+9/2/14 move all query params to GLQueryParameters
+7/29/14 check is graphing-lines-128.png (website thumbnail)
+7/15/14 make EquationNode.computeMaxSlopePickerWidth static
+7/15/14 move definition of Challenge.createTitle into inherit call
+7/15/14 #37 fix Challenge.createInitialGuess so that slope manipulator is initially on the graph is all cases
+7/10/14 #33 move interactive line in front of standard and saves lines on graph
+7/10/14 #36 add spaces around '=' in 'x = 3 (slope undefined)'
+7/7/14 created 1.0 branch
+7/7/14 vegas#24 migrate ScoreboardBar to vegas
+# 1.0.0-dev.16 7/1/14
+7/1/14 move equation a bit further away from end of line (offset 60 vs 30), so it doesn't interfere with axis labels quite so often
+7/1/14 #24 fix initial position of 'down' point tool in game
+# 1.0.0-dev.15 6/30/14
+6/30/14 replace screen icons with code
+6/30/14 DimensionalArrowNode: add options to hide delimiters, adjust line length to hide lineCap and lineJoin issues at arrow tip
+6/30/14 #22 better documentation for updatingControls flag
+6/30/14 add assertions for all hard-coded ranges in challenge factories, to verify that they are in bounds of graph
+6/30/14 #25 code review: use yRange for challenges involving y-intercept in challenge factories
+6/30/14 #24 code review: remove parameters from Challenge supertype that have identical arguments in subtypes
+# 1.0.0-dev.14 6/27/14
+6/26/14 fix: on 'Slope' screen, if slope is a negative integer, line is labeled "Slope is - -3" (double negative sign)
+6/26/14 set all fudge factors in EquationNode to zero, it looks better
+6/26/14 fix layout of 'Place The Points' challenges, broken by commit 263f16b9ba88520cebd832c2fb7d934fa7a24681
+6/26/14 #15 code review: replace mvt with modelViewTransform throughout
+6/26/14 simplify PointTool.isOnLine
+6/26/14 #13 code review: replace explicit prototype assignment with inherit(Object,...)
+6/26/14 #20 code review: clean up layout of EquationControls
+6/26/14 #18 code review: use renderer:GLConstants.RENDERER in LineGameView
+6/26/14 #17 code review: add doc to DimensionalArrowNode
+6/26/14 #12 code review: rename Fraction.valueOf to getValue
+6/26/14 change request: center game buttons on left edge of graph
+6/26/14 #10 fix SST's name in credits
+6/25/14 #9 fix: fraction line missing in 'Make The Equation' challenges with Firefox
+6/25/14 add BG and SST to credits
+# 1.0.0-dev.13 6/25/14
+6/25/14 replace " with ' throughout
+6/25/14 move graph up a tad in first 3 screens
+6/25/14 delete AnswerGraphNode
+6/25/14 add visibility options to ChallengeGraphNode
+6/25/14 remove braces in challenge factories where code blocks are obvious
+6/25/14 move scale of ResetAllButton to GLConstants
+6/25/14 clean up PointToolNode
+6/25/14 move graph a tad to the left in game, center boxes in remaining space to the left
+6/25/14 move graph a tad to the right in first 3 screens
+6/25/14 use VBox to clean up layout of level-section screen
+6/25/14 cleanup handling of margins across ScreenViews
+6/25/14 position control panels relative to top of screen, not vertically centered
+6/25/14 put 'Reset All' button in lower-right of all screens
+6/25/14 rename view property 'slopeVisible' to 'slopeToolVisible'
+6/25/14 remove vestigial view property 'interactiveLineVisible'
+6/25/14 right-align 'Start Over' button in scoreboard with challenge graph
+6/25/14 left-align 'Level' label in scoreboard with challenge boxes
+6/25/14 same position for 'Reset All' button in first 3 screens (relative to bottom of screen instead of bottom of control panel)
+6/25/14 use 'cheer' for perfect-score sound (change in vegas.GameAudioPlayer)
+# 1.0.0-dev.12 6/25/14
+6/25/14 #6 new icons for the first 3 screens
+6/24/14 reduce vertical spacing between control panels, so that screens 2 & 3 look more balanced
+# 1.0.0-dev.11 6/24/14
+6/24/14 #5 use PropertySet.multilink where possible
+6/24/14 create point tool differently in game reward, because PointToolNode has too many dependencies
+6/24/14 replace PHET logo with paper airplanes in game reward
+6/24/14 add 'reward' query parameter, to show reward at end of every game, regardless of score
+6/24/14 first pass at integrating vegas.RewardNode
+6/24/14 move responsibility for playing 'results' audio into ResultsNode
+6/24/14 PointToolNode: move constants to options, for customization in game reward
+# 1.0.0-dev.10 6/23/14
+6/23/14 add Amanda to credits
+6/23/14 create/add dev nodes conditionally
+6/23/14 delete vestigial createStaticLabel functions
+6/23/14 fix problem with positioning challenges below new scoreboard, so that graph is always in exactly the same place
+6/23/14 fix vertical positioning of equations in 'Graph The Line' boxes by removing an extraneous picker from SlopeInterceptEquationNode
+6/23/14 game: limit titles to be as wide as boxes, for i18n
+6/23/14 game: top-align instructions with graph's grid
+6/23/14 game: center face under left-side boxes
+6/23/14 game: set opacity of face to 1 (yellow face on yellow background)
+6/23/14 game: move 'Check' (and other buttons) to centerBottom
+6/23/14 implement a non-standard scoreboard "bar" at the top of the screen (had to copy most of vegas.Scoreboard)
+6/19/14 design decision: default to game timer off in all sims
+6/19/14 move ShadowText to scenery-phet, use it for 'correct' and 'incorrect' icons
+6/15/14 confirmed that best time is only recorded when the game timer is enabled (see LineGameModel.updateBestTime, line 204)
+6/15/14 fix vertical alignment of answer and guess equations in 'Graph The Line' challenges
+6/15/14 make equation boxes slightly shorter so that smiley face doesn't overlap the 'guess' box in 'Graph The Line' challenges
+6/15/14 reduce height of level-start buttons, to account for best-time display
+6/15/14 wire up 'best time' feature to vegas.LevelStartButton
+# 1.0.0-dev.9 6/14/14
+6/13/14 use a mutable equation node in 'Graph The Line' challenges to improve performance
+6/13/14 'Node.visible = truthy' triggers an assertion, change to Node.visible = {boolean}'
+6/13/14 slope tool: use a slightly darker color for dimensional lines, increase lineWidth from 1.25 to 1.75, increase size of arrow heads from (6,8) to (10,10)
+6/13/14 adjust for lineWidth when positioning tip of dimensional arrows in slope tool
+6/13/14 create 'Game' screen icon programmatically
+6/13/14 use scenery-phet.FaceWithPointsNode in game
+6/12/14 clean up images/license.txt
+6/12/14 delete blue-stopwatch.png, no longer used
+6/12/14 replace images of 'check mark' and 'heavy ballot X' with Text nodes that render their Unicode chars
+6/12/14 #3 hide y-intercept manipulator when 'Hide lines' is checked (typo in yInterceptManipulator.visible)
+6/10/14 add 'scaling factor' options to IconFactory.createScreenIcon, so that icons can be scaled such that all of them having similar-sized pickers
+6/10/14 move ranges from constructor params to options for SlopeEquationNode, so that interface is similar to other equations
+6/10/14 programmatically create icons for first 3 screens
+# 1.0.0-dev.8 6/10/14
+6/10/14 light gray stroke (default) added to number pickers as part of scenery-phet#50
+6/10/14 increase lineWidth from 4 to 5 for standard-line icons next to check boxes
+6/10/14 integrate another new point_tool_body.png from BG
+6/10/14 verified minimal axon activity for Slope, Slope-Intercept and Point-Slope screens
+6/10/14 integrate another new point_tool_body.png from BG (required cropping of empty and transparent border pixels)
+6/10/14 adjust initial location of point tools in game to accommodate new images
+# 1.0.0-dev.7 6/10/14
+6/10/14 center value in point tool 'window'
+6/10/14 reflect point tool's tip, so that lighting stays consistent
+6/10/14 integrate new point tool images from BG (required cropping of empty and transparent border pixels)
+6/9/14 use lazyMultilink in EquationNode subtypes, to prevent an unnecessary notification cycle at startup
+6/9/14 format code
+6/9/14 eliminate expensive creation of model types in IconFactory
+6/5/14 define observer functions inline in Property.multilink calls
+6/5/14 use Property.multilink to reduce axon thrashing at startup
+6/5/14 compensate for difference between bounds and visibleBounds when positioning equation on line
+6/5/14 iPad3 responsiveness was pronounced acceptable
+6/5/14 use mvt.modelToViewXY where appropriate, to avoid a Vector2 allocation
+6/5/14 new image for point tool body
+6/5/14 center the game settings interface on the screen
+6/5/14 delete vestigial GameSettingsPanel
+# 1.0.0-dev.6 6/4/14
+6/4/14 Slope-Intercept, Point-Slope: fix removal of standard and saved lines
+6/4/14 Slope-Intercept, Point-Slope: fix color of equations for standard and saved lines
+6/4/14 PointSlopeEquationNode: use visible instead of add/removeChild when updating to match the line
+6/4/14 SlopeInterceptEquationNode: use visible instead of add/removeChild when updating to match the line
+6/4/14 SlopeEquationNode: use visible instead of add/removeChild when updating to match the line
+6/4/14 allocate and show undefined-slope indicator only for fully-interactive equations
+6/4/14 SlopeInterceptEquationNode, PointSlopeEquationNode: pre-alloc and reuse nodes where possible
+6/4/14 delete SlopeUndefinedNode, replace with Text node
+6/4/14 change constructor for SlopeUndefinedNode
+6/4/14 remove color param from createStaticLabel and related clients
+6/4/14 implement createStaticLabel using createDynamicLabel
+6/4/14 PointSlopeEquationNode: move constructor params to options (x1RangeProperty, y1RangeProperty, riseRangeProperty, runRangeProperty)
+6/4/14 SlopeInterceptEquationNode: move constructor params to options (riseRangeProperty, runRangeProperty, yInterceptRangeProperty)
+6/4/14 SlopeEquationNode: preallocate nodes needed to represent all simplified forms, dynamically add children, set text/fill/stroke
+6/4/14 rename createLabel to createStaticLabel, for consistency with createDynamicLabel
+6/4/14 change how equation on interactive line is created
+6/4/14 don't do updateLayout for fully-interactive equations, because their form is constant
+6/4/14 clean up how property equation form is specified when creating LineNode
+6/3/14 move createDynamicEquation to EquationNode subtypes
+6/3/14 add a temporary adapter that updates the equation node when lineProperty changes
+6/3/14 encapsulate font requirements in GLFont
+6/2/14 clean up GLColors
+# 5/28/14 1.0.0-dev.5
+5/28/14 tweak location of game buttons
+5/28/14 increase size of point tools in game
+5/28/14 put 'Level N' above icon in level-selection buttons, increase size of buttons
+5/28/14 make game graphs 20% larger (repositioning of buttons, face, scoreboard and point tools required)
+5/28/14 implement option.align in scenery-phet.NumberPicker, default to 'center'
+5/28/14 adjust initial location of point tools, now that their tips are not horizontally centered
+5/28/14 verified that level-selection button stars reflect best score, not most recent score
+5/28/14 specify halo alpha for each manipulator color, since alpha needs to be different depending on color
+5/28/14 replace color for 3 different points with GLColor.POINT
+5/28/14 use radius instead of diameter for specifying manipulators
+5/28/14 add halo to manipulators
+5/28/14 change 'Choose You Game Level' to 'Choose Your Level'
+5/28/14 expand pointer areas for manipulators by 50%
+5/28/14 PointToolNode: move tip to left edge, left-justify value (new background image needed with grippy piece)
+# 5/28/14 1.0.0-dev.4
+5/28/14 try another workaround for namespace collision between scenery.Line and graphing-lines.Line
+5/28/14 rename interactiveLineProperty to lineProperty everywhere, except where the qualification is needed in model to differentiate between other lines
+5/27/14 delete various vestigial occurrences of pickable:false
+5/27/14 change slopeToolEnabled from a constructor parameter to an option (default true) for ChallengeGraphNode and its subtypes
+5/27/14 make plotted points persistent in game
+5/27/14 use string representations for all colors
+5/27/14 make LineNode mutable via lineProperty constructor param
+5/27/14 change 'imports' to 'modules' in require comments
+5/20/14 delete LineNode factory functions, move them to constructors of LineFormsGraphNode subtypes
+5/20/14 delete EquationControls factory functions, instantiate EquationControls directly in LineFormsView subtype constructors
+5/20/14 replace EquationControls subtypes with factory functions
+5/20/14 replace LineNode subtypes with factory functions
+5/20/14 change createEquationNode override to an option, for LineNode subtypes
+5/20/14 use VBox to do layout of GraphControls
+5/20/14 remove fudge factors from SlopeToolNode
+5/20/14 generalize the arrows using in SlopeToolNode as DimensionalArrowNode
+5/20/14 make SlopeToolNode mutable, so that it doesn't need to create new nodes when the line changes
+5/20/14 make NumberBackgroundNode dynamically synchronize to a valueProperty
+# 5/21/14 1.0.0-dev.3
+5/19/14 add GLConstants.MANIPULATOR_DIAMETER
+5/19/14 expand width of picker touch areas
+5/19/14 expand touchArea for "Hide lines" check box
+5/19/14 disable slope-tool icon when 'slope' check box is disabled
+5/19/14 add opacity as a fallback for showing enabled/disabled state of sun.CheckBox
+5/19/14 fix in ChallengeFactory2, incorrect use of RandomChooser.rangeToArray, was creating invalid lines and causing assertion failures
+5/19/14 tweak colors for level-selection buttons
+5/19/14 increase size of timer and sound toggle buttons
+5/19/14 Game: convert 'best time' to properties, for eventual integration with LevelStartButton
+5/19/14 Game: populate 'best score' at the end of a game
+5/19/14 replace vegas.GameSettingsPanel with custom node that uses vegas.LevelStartButton
+5/19/14 update copyright header in all source files
+5/19/14 PointSlopeEquationNode: replace options.interactiveX1 and options.interactiveY1 with options.interactivePoint
+5/19/14 remove _.omit experiment in NumberBackgroundNode
+5/19/14 SlopeEquationNode: mutate the interactive equation instead of using removeChild/addChild, to improve performance
+5/19/14 make NumberBackgroundNode and UndefinedSlopeIndicator mutable, to improve performance
+5/19/14 remove underscore prefix from private fields and functions, obsolete convention not followed consistently in this sim
+5/19/14 use sun.HStrut instead of scenery.Line in control panels
+5/19/14 copy and revise implementation.txt from Java implementation
+5/19/14 copy and revise model.txt from Java implementation
+5/19/14 remove distinction between font size for interactive vs static parts of equation
+5/19/14 increase xMargin for 'Save Line' and 'Erase Lines' buttons
+5/19/14 verify that Fraction numerator and denominator are integers
+5/19/14 replace 'new Node()' placeholders with 'new Rectangle(0,0,1,1)' to avoid undefined-bounds assertion in dot.Transform3
+5/19/14 use GLConstants.LAYOUT_BOUNDS in LineGameView
+5/19/14 delete unused LineFormsView.reset
+5/19/14 add GLColors.SCREEN_BACKGROUND
+5/16/14 set a specific font size for scoreboard, to compensate for changes made to vegas.Scoreboard
+5/16/14 replace sun.TextPushButtonDeprecated with sun.buttons.TextPushButton
+3/13/14 replace HTMLText with SubSupText, so that we use less memory
+1/28/14 remove 'do nothing' step functions from models, since screen.model.step is now optional in joist.Sim.animationLoop
+# 1.0.0-dev.2 1/24/14
+1/21/14 make 'size' an option for PlusNode and MinusNode
+1/21/14 migrate PlusNode and MinusNode to scenery-phet, for use in ph-scale
+1/13/14 migrate NumberPicker to scenery-phet, for use in ph-scale
+1/13/14 rename 'Spinner' to 'NumberPicker', change 'spinner' to 'picker' throughout, since this is what PhET calls these
+1/3/14 check in icons for game levels
+12/23/13 remove unused imports
+11/13/13 add cursor:'pointer' for spinners
+11/13/13 use dot.Util.toFixedNumber where appropriate, see dot#10
+11/4/13 integrate vegas.LevelCompletedNode, delete GameOverPanel
+10/29/13 joist#66, generalize handling of credits
+10/29/13 convert LineGameModel (9 properties) to PropertySet
+10/29/13 rename inner type of LineGameModel from PropertyWithHook to GamePhaseProperty
+10/29/13 compute drag bounds for point tools in linegame.Challenge
+10/29/13 implement best-time logic in game model
+10/29/13 use same default corner radius for Spinners and NumberBackgroundNode
+10/29/13 rounded corners on spinners (based on Shape.roundRect)
+10/29/13 update the slope tool only when it's visible
+10/29/13 fix minor bug that was ignored by desktop browsers but caused mobile Safari to error
+10/29/13 joist#69, convert to different requirejs style for main.js
+10/21/13 use screen-view layoutBounds instead of 'playAreaSize' for top-level game nodes
+10/21/13 rename ChallengeNode.subclassParent to subtypeParent
+10/21/13 use inline CSS instead of deprecated 'font' tag to make subscripts smaller in general form of Point-Slope equation
+10/21/13 flesh out LineGameModel.reset, make some notes about potential use of PropertySet
+10/21/13 convert LineFormsModel to PropertySet (1 Property)
+10/21/13 convert PlaceThePoints to PropertySet (extends Challenge with 3 additional Properties)
+10/21/13 convert Challenge to PropertySet (1 Property)
+10/21/13 add 'Property' suffix to Challenge.guess
+10/17/13 use inline CSS instead of deprecated 'font' tag to make subscripts smaller in general form of Slope equation
+10/17/13 problems with HTMLText have disappeared, use HTMLText in SlopeEquationNode.createGeneralFormNode
+10/17/13 new screen-icons.ai from SST
+10/14/13 rename screen-icon images
+10/14/13 integrate revised screen icons
+10/14/13 add 'hardcoded' query parameter that will use the same representative set of challenges every time
+10/14/13 adjust layout of game
+10/14/13 Line.onLineXY and onLinePoint, fixed "Place the Point" challenges
+10/11/13 integrate vegas.GameAudioPlayer
+10/11/13 migrate 'Game Settings' panel to vegas
+10/11/13 migrate 'Game Over' panel to vegas
+10/11/13 move 'general' game strings to vegas
+10/11/13 migrate Scoreboard to vegas
+10/11/13 change layout of "Game Settings" panel
+10/11/13 replace check boxes with sound and timer toggle buttons
+10/11/13 migrated BAA.SimpleClockIcon to scenery-phet
+10/11/13 localize and migrate GameTimer to vegas
+10/11/13 implement GameTimer
+10/10/13 i18n of "Game Settings" and "Game Over" panels
+10/10/13 make "Game Over" panel look like Java version
+10/10/13 make "Game Over" panel less ugly
+10/10/13 make game buttons less ugly
+10/10/13 make "Game Settings" panel look less ugly
+10/9/13 quick-&-dirty "Game Over" interface
+10/9/13 Scoreboard i18n
+10/9/13 Scoreboard: highly-modified copy of BAA.GameScoreboardNode
+10/9/13 moved GameSettings and GameResults into LineGameModel
+10/8/13 use screen icons provided by SST
+10/8/13 remove 'highlight on mouseOver' feature for lines, set them to pickable:false
+10/8/13 use joist.Timer in Spinner
+10/8/13 layout fixes in game
+10/4/13 convert to use PhET string.js plugin
+10/3/13 remove assert imports, assert is now a global
+9/27/13 move GLStrings.js to graphing-lines-strings.js
+9/24/13 fixes to linegame package
+9/24/13 add missing strings that came from 'games' package in Java
+9/24/13 replace phet-core.callSuper with Supertype.prototype.method.call( this,...)
+9/24/13 more porting of linegame.view package
+9/24/12 quick-&-dirty game settings panel
+9/23/13 more porting of linegame.view package
+9/23/13 convert to use chipper 'image' plug-in, and scenery-phet.ResetAllButton
+9/23/13 more porting of linegame.view package
+9/23/13 finish porting ChallengeNode
+9/20/13 started port of ChallengeNode (incomplete)
+9/20/13 ported all challenge factories (untested)
+9/19/13 changes required by merge of chipper 'single-file' branch into master
+9/19/13 move dependencies to sherpa, update to lodash-2.0.0, jquery-2.1.0, i18n-2.0.4, require-2.1.8
+9/19/13 port more of Line Game model, remove circular dependency in requirejs import
+9/18/13 port more of Line Game model
+9/17/13 port some of the Line Game model
+9/17/13 rename GLConfig to GLConstants
+9/16/13 fraction lineWidth for grid lines looks crappy, use integers and adjust colors to make grid look better
+9/16/13 make highlighting of saved lines more efficient, doesn't need to redo layout
+9/16/13 pickable:false for the standard lines on the graph, they are not interactive
+9/16/13 pickable:false for the interactive line on the graph, only the manipulators are actually interactive
+9/16/13 change signature of update function in PointSlopeEquationNode and SlopeInterceptEquationNode
+9/16/13 broke PointSlopeEquationNode in earlier change
+9/16/13 replace EquationNode.createFractionLineShape with scenery.Line at call sites
+9/16/13 set pickable:false for non-interactive parts of equations
+9/16/13 remove nested options experiment from NumberBackgroundNode
+# 0.0.0-dev.1 9/13/13
+9/13/13 use weight:'bold' for static equations
+9/13/13 fix background color of graph control panel
+9/13/13 add icons for standard lines to graph control panel
+9/13/13 add icon for slope tool to control panel
+9/13/13 consistent use of 'Property' suffix on var names of type axon.Property
+9/13/13 future-proof all Property.link calls by binding the callback to 'this'
+9/13/13 change order of graph controls to match Java version
+9/13/13 don't include standard-lines feature for Slope screen
+9/13/13 fix highlighting of saved lines
+***** feature complete: Slope, Slope-Intercept, Point-Slope screens
+9/13/13 delete PointSlopeTests, ad hoc, no longer needed
+9/13/13 port slope-intercept equation
+9/11/13 ensure that controls will fit in the area to the right of the graph, scale if necessary, center horizontally and vertically
+9/11/13 new placeholder icons for home screen and navbar, with Gimp asset file (.xcf)
+9/11/13 fix crash when removing UndefinedSlopeIndicator from interactive slope equation
+9/11/13 implement non-interactive form of SlopeEquationNode
+9/11/13 use options.staticFontSize to compute layout metrics for slope equation
+9/11/13 use MinusNode for '-' operator in SlopeEquationNode
+9/11/13 move common configuration stuff to GLConfig.js
+9/11/13 fix range properties that are passed to SlopeEquationNode constructor
+9/11/13 add height option to NumberBackgroundNode
+9/11/13 first pass at interactive Slope equation, has many problems
+9/11/13 move equation a little further away from the line that it's labeling
+9/11/13 implement SlopeEquationNode.createGeneralFormNode
+9/10/13 implement ExpandCollapseButton, use on equation control panel
+9/10/13 resize equation control panel when it is expanded/collapsed
+9/10/13 implement node for displaying general form of slope-intercept equation
+9/10/13 add game stub
+9/10/13 fix layout of top part of equation control panel
+9/10/13 wire up Slope and Slope-Intercept screens, debug, equation not implemented yet
+9/10/13 port SlopeView and SlopeInterceptView (untested)
+9/10/13 port line nodes for Slope and Slope-Intercept screens (untested)
+9/10/13 stubs for Slope and Slope-Intercept equations
+9/10/13 port graphs for Slope and Slope-Intercept screens (untested)
+9/10/13 port equation control panels for Slope and Slope-Intercept screens (untested)
+9/10/13 remove standard and saved lines from graph when Reset All button is pressed
+9/10/13 erase lines when "Erase lines" button is pressed
+9/10/13 hide standard lines when check boxes are unselected
+9/10/13 add press-&-hold feature to Spinner
+9/10/13 instead of overriding LineFormsGraphNode.createLineNode, pass a factory function to LineFormsGraphNode constructor
+9/10/13 add static equation to graphed lines
+9/10/13 handle reset of view properties
+9/10/13 move dragBounds to point tool model, adjust
+9/10/13 fix layout of equation control panel, increase margins
+9/10/13 move manipulatorDiameter to model
+9/9/13 use 'Property' suffix for more variables of type Property
+9/9/13 port remainder of pointslope package
+9/9/13 render general form of point-slope equation, for control panel title
+9/9/13 minor interface changes to view types
+9/9/13 use 'Property' suffix for all variables of type Property
+9/9/13 fixed layout of point-slope equation
+9/9/13 first attempt at point-slope equation, layout is very messed up
+9/9/13 port EquationControls, base type for control panels
+9/9/13 added spinners for slope and coordinates
+9/9/13 completed Spinner
+9/9/13 first pass at Spinner, does not fire, greatly simplified from Java implementation
+9/6/13 port PointSlopeLineNode, untested
+9/6/13 port and test arbitrary point manipulator
+9/6/13 port and test y-intercept manipulator
+9/6/13 port and test (x2,y2) manipulator
+9/5/13 port and test slope manipulator
+9/5/13 port and test (x1,y1) manipulator
+9/5/13 port and test of LineManipulatorNode
+9/5/13 port LineFormsGraphNode and PointSlopeGraphNode (untested, require other things yet to be ported)
+9/5/13 use 'Property' suffix for fields that are of type Property, to differentiate from PropertySet fields
+9/5/13 convert PointTool to PropertySet
+9/5/13 smorgasbord#1, use GRAPHING_LINES namespace in requirejs imports
+9/4/13 axon#5, rework ObservableArray
+9/4/13 add drag handler for point tool
+9/3/13 debugged PointToolNode, no drag handler yet
+8/30/13 first pass at PointToolNode, test case in PointSlopeView is commented out because it fails
+8/30/13 completed GraphControls
+8/29/13 first attempt at GraphControls, has problems, lots of work on CheckBox was required
+8/28/13 use scenery-phet.ArrowNode({doubleHead:true}) for axes in GraphNode
+8/28/13 use scenery-phet.ArrowNode({doubleHead:true}) for line in LineNode
+8/28/13 use scenery.Line
+8/28/13 debugged location of equation in LineNode
+8/27/13 port more of the common.view
+8/26/13 specify backgroundColor for all Screens
+8/26/13 port more of the common.view
+8/23/13 port some of the common.view
+8/23/13 fix PointSlopeModel to support subtyping by SlopeInterceptModel
+8/22/13 joist#35, terminology change: tab -> screen
+8/21/13 port more of the common.model
+8/19/13 port some of the common.model package from Java version
+8/19/13 add skeletons for other 3 screens
+8/19/13 populated skeleton for "Slope" screen
+8/19/13 set up framework (html, config, main, strings, images,...)
+8/19/13 created GitHub repo
